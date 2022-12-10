@@ -1,0 +1,150 @@
+:root {
+  --mainColor: #222222;
+  --secondColor: #ffb400;
+  --thirdColor: #111111;
+  --lightColor: #ffffff;
+  --mainPadding: 40px;
+  --mainTransition: 0.5s;
+}
+/* start global ruls */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.mainCont {
+  padding: 0 50px;
+  margin: 0 auto;
+}
+/* end global ruls */
+/* start hader */
+header {
+  background-color: var(--mainColor);
+  text-align: center;
+  padding: 20px 0px;
+  box-shadow: 0 3px 9px 1px var(--secondColor);
+}
+header h1 {
+  color: var(--secondColor);
+  font-size: 50px;
+  margin: 0%;
+  padding: 0;
+}
+
+/* end header */
+/* start codG */
+.codG {
+  padding: var(--mainPadding) 0;
+  background-color: var(--mainColor);
+  text-align: center;
+  /* height: 100vh; */
+}
+.codG h1 {
+  margin-top: 0;
+  color: var(--secondColor);
+}
+.codG form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.codG form input {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  border: 1px solid var(--secondColor);
+  height: 30px;
+  text-align: center;
+  width: 500px;
+  max-width: 100%;
+}
+button {
+  width: 100px;
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+.codG form button:hover {
+  background-color: var(--lightColor);
+  color: var(--secondColor);
+  transition: var(--mainTransition);
+}
+.out {
+  text-align: center;
+  min-width: 500px;
+  max-width: 100%;
+  min-height: 30px;
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+  padding: 10px;
+  /* padding-left: 30px; */
+  border-radius: 20px;
+}
+/* ENd cod g */
+/* start cod verify */
+.codV {
+  padding: var(--mainPadding) 0;
+  background-color: var(--secondColor);
+  text-align: center;
+}
+.codV .mainCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.codV .mainCont h1,
+.codV .mainCont h2 {
+  color: var(--mainColor);
+}
+.codV .mainCont input {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  border: 1px solid var(--secondColor);
+  height: 30px;
+  text-align: center;
+  width: 500px;
+  max-width: 100%;
+}
+.codV .mainCont button {
+  width: 100px;
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+.codV .mainCont .out2 {
+  text-align: center;
+  min-width: 500px;
+  max-width: 100%;
+  min-height: 30px;
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  padding: 10px;
+  /* padding-left: 30px; */
+  border-radius: 20px;
+}
+/* end cod verify */
+.datashow {
+  padding: var(--mainPadding) 0;
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  text-align: center;
+}
