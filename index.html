@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normal.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@300;600;700&family=Cairo:wght@200;300;400;500;600;700;800&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,800;1,100;1,600;1,700&family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;1,700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Mr Alpha</title>
+  </head>
+  <body onload="main()">
+    <header>
+      <h1>Mr Alpha</h1>
+    </header>
+    <div class="codG">
+      <h1>توليد كود</h1>
+      <div class="mainCont">
+        <form action="">
+          <input
+            type="date"
+            name="date"
+            id="date"
+            placeholder="حدد تاريخ اليوم"
+            required
+          />
+          <input
+            type="time"
+            name="time"
+            id="time"
+            placeholder="الوقت"
+            required
+          />
+          <input
+            type="text"
+            name="admin"
+            id="admin"
+            placeholder="معرف الآدمن"
+            required
+          />
+          <input
+            type="text"
+            name="client"
+            id="client"
+            placeholder="اسم العميل"
+            required
+          />
+          <input
+            type="number"
+            name="cv"
+            id="cv"
+            placeholder="قيمة البطاقة"
+            required
+          />
+          <input
+            type="number"
+            name="tv"
+            id="tv"
+            placeholder="عدد التوكنز"
+            required
+          />
+          <button id="gbtn" onclick="genratCode()">توليد</button>
+          <p class="out" id="out"></p>
+        </form>
+        <div>
+          <button id="dbtn" onclick="delet()">إلغاء</button>
+          <button id="sbtn" onclick="done()">تاكيد</button>
+        </div>
+      </div>
+    </div>
+    <div class="codV">
+      <div class="mainCont">
+        <h1>التحقق من كود</h1>
+        <h2>أدخل الكود هنا</h2>
+        <input type="text" id="codviryfy" />
+        <button id="vbtn" onclick="veryfi()">تحقق</button>
+        <p class="out2" id="out2"></p>
+        <div>
+          <button id="vbtn" onclick="usecode()">استخدام</button>
+          <button id="dbtn2" onclick="erise()">حذف الكود</button>
+        </div>
+      </div>
+    </div>
+    <div class="datashow">
+      <div class="maincont">
+        <p id="allcods2"></p>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="main.js"></script> -->
+  <script src="main2.js"></script>
+</html>
